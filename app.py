@@ -13,7 +13,7 @@ def get_todos():
 def add_todo():
     todo = request.json
 
-    # add item only if it is not already present
+    # add item only if it is not already present #
     if todo in todos:
         return jsonify({'error': 'Item already exists'}), 400
     else:
