@@ -9,6 +9,7 @@ todos = []
 def get_todos():
     return jsonify(todos), 200
 
+#fix bug
 @app.route('/todos', methods=['POST'])
 def add_item():
     items = request.json
